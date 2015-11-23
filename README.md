@@ -1,5 +1,3 @@
-This is the repository used to start new reapp apps from the CLI.
+# doublespeak2
 
-It's copied into a new folder when you run the command `reapp new`.
-
-To see more documentation on reapp, try [our getting started docs](http://reapp.io/start.html).
+[![Stories in Ready](https://badge.waffle.io/prashantpawar/doublespeak2.png?label=ready&title=Ready)](http://waffle.io/prashantpawar/doublespeak2)
