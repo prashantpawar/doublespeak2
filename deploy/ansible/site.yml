@@ -1,0 +1,10 @@
+---
+- hosts: all
+  sudo: true
+  vars_files:
+    - 'vars/nginx-vars.yml'
+  roles:
+   - nodesource.node
+   - mrlesmithjr.rabbitmq
+   - api
+   - nginx

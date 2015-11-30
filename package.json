@@ -1,0 +1,27 @@
+{
+  "name": "doublespeak-2",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "install": "(cd client && npm install) && (cd server && npm install)",
+    "clean": "(cd client && npm clean) && (cd server && npm clean)",
+    "test": "cd server && npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/prashantpawar/doublespeak2"
+  },
+  "description": "App for learning a new language.",
+  "homepage": "doublespeak2.designeer.us",
+  "author": {
+    "name": "Prashant Singh Pawar",
+    "email": "prashantpawar@gmail.com",
+    "url": "prashantpawar.com"
+  },
+  "keywords": [],
+  "dependencies": {
+    "eslint": "^1.10.2",
+    "eslint-config-airbnb": "^1.0.2",
+    "eslint-plugin-react": "^3.11.1"
+  }
+}

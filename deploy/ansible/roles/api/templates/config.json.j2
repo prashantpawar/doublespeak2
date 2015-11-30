@@ -1,0 +1,33 @@
+{
+  "websiteUrl": "{{website_url}}",
+  "liveReload":true,
+  "db":{
+    "driver": "sqlite3",
+    "dialect":"sqlite",
+    "database": "dev",
+    "user": "user",
+    "password": "password",
+    "host": "localhost",
+    "port": "5432",
+    "logging": true,
+    "storage": "./db.dev.sqlite"
+  },
+  "authentication":{
+    "facebook":{
+      "clientID": "{{facebook_client_id}}",
+      "clientSecret": "{{facebook_client_secret}}",
+      "callbackURL": "{{website_url}}/api/v1/auth/facebook/callback"
+    }
+  },
+  "mail": {
+    "from": "{{mail_from}}",
+    "signature": "{{mail_signature}}",
+    "smtp": {
+      "service": "{{mail_service}}",
+      "auth": {
+        "user": "{{mail_user}}",
+        "pass": "{{mail_password}}"
+      }
+    }
+  }
+}
