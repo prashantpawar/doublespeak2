@@ -13,9 +13,9 @@ export default React.createClass({
                     <div className="row">
 
                         <div className="content col-md-12 col-sm-12 text-center">
-                            <div>StarHackIt is the starting point to build a full stack web application.</div>
+                            <div>DoubleSpeak2 is a new way to learn a new language.</div>
                             <div>
-                                Get the source code at <a href="https://github.com/FredericHeem/starhackit" target="_blank">GitHub</a>
+                                Get the source code at <a href="https://github.com/prashantpawar/doublespeak2" target="_blank">GitHub</a>
                             </div>
                         </div>
 
