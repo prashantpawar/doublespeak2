@@ -1,20 +1,25 @@
 import _ from 'lodash';
 import React from 'react/addons';
-import cx from 'classnames';
-import { Button } from 'react-bootstrap';
+import Reflux from 'reflux';
 import DocTitle from 'components/docTitle';
+import Quiz from 'components/quiz';
+
+import alphabetStore from 'stores/alphabet';
 
 export default React.createClass( {
 
     mixins: [
-        React.addons.LinkedStateMixin,
+        Reflux.connect( alphabetStore, 'alphabet')
     ],
 
     getInitialState() {
         return {
-            step: 'SendPasswordResetEmail',
-            errors: {}
+            questions: alphabetStore.getAlphabetQuestions() 
         };
+    },
+
+    componentDidMount() {
+        
     },
 
     render() {
@@ -23,9 +28,9 @@ export default React.createClass( {
                 <DocTitle
                     title="Learn Alphabets"
                 />
-
-                { this.render()}
-                { this.renderCheckEmail() }
+                <Quiz
+                    questions={this.props.questions}
+                />
             </div>
         );
     }
