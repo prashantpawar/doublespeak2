@@ -5,6 +5,7 @@ import DocTitle from 'components/docTitle';
 import Quiz from 'components/quiz';
 
 import alphabetStore from 'stores/alphabet';
+import alphabetActions from 'actions/alphabet';
 
 export default React.createClass( {
 
@@ -14,12 +15,12 @@ export default React.createClass( {
 
     getInitialState() {
         return {
-            questions: alphabetStore.getAlphabetQuestions() 
+            questions: []
         };
     },
 
     componentDidMount() {
-        
+        alphabetActions.getAlphabets();
     },
 
     render() {
