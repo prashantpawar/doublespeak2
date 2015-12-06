@@ -5,8 +5,8 @@ let env = process.env;
 let config = {
 
     general: {
-        title: 'StarHackIt',
-        description: 'StarHackIt is a fullstack boilerplate written in es6/es7',
+        title: 'Doublespeak2',
+        description: 'Doublespeak2 app lets you learn a new language',
         apiUrl: '/api/v1/'
     },
 

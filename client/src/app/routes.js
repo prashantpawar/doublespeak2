@@ -10,6 +10,7 @@ import Application from 'views/application';
 import Logout from 'views/logout';
 import MainLanding from 'views/mainLanding';
 import UserProfile from 'views/userProfile';
+import Alphabets from 'views/alphabets';
 import RegistrationComplete from 'views/registrationComplete';
 import ResetPassword from 'views/resetPassword';
 import MyProfile from 'views/myProfile';
@@ -21,6 +22,8 @@ let routes = (
         <Route component={Signup} path="signup"/>
         <Route component={Logout} path="logout"/>
         <Route component={Forgot} path="forgot"/>
+
+        <Route component={Alphabets} path="alphabets"/>
 
         <Route component={UserProfile} name="userProfile" path="users/:id"/>
         <Route component={RegistrationComplete} name="verifyEmail" path="verifyEmail/:code"/>
